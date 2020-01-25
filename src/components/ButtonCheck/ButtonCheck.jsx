@@ -9,7 +9,7 @@ const ButtonCheck_base = ({...props}) => {
     return (
         <div {...props}>
             <button className='btn-clean'>
-                Check
+                { props.children ? props.children : 'Check'}
             </button>
         </div>
     )

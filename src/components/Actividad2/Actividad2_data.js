@@ -1,52 +1,52 @@
 const data = [
     {
         id:1,
-        pregunta:'Felipe Salas is an undergraduate student at the UTP.',
+        pregunta:'The first student says that he does not like Colombian food.',
         respuesta: true 
     },
     {
         id:2,
-        pregunta:'The student’s ID number is 1087266271',
+        pregunta:'The second student studies Environmental Management.',
         respuesta: true 
     },
     {
         id:3,
-        pregunta:'The assistant mentions five different type of programs at UTP.',
+        pregunta:'Henrietta is German.',
         respuesta: false 
     },
     {
         id:4,
-        pregunta:'The Student is interested in studying languages at ILEX.',
+        pregunta:'Francisco likes UTP’s nature.',
         respuesta: false 
     },
     {
         id:5,
-        pregunta:'The basic areas emphasize on Math, Physics and Chemistry only.',
+        pregunta:'Henrietta says students are not helpful.',
         respuesta: false 
     },
     {
         id:6,
-        pregunta:' A physics course lasts 14 hours.',
+        pregunta:' The Mexican student comes from Puebla.',
         respuesta: false 
     },
     {
         id:7,
-        pregunta:'A BA lasts five years.',
+        pregunta:'Henrietta thinks Colombian culture isn’t nice.',
         respuesta: true 
     },
     {
         id:8,
-        pregunta:'The applicant needs to at least be in 11th grade before being part of the course.',
+        pregunta:'The first student wants to learn more Spanish.',
         respuesta: true 
     },
     {
         id:9,
-        pregunta:'Students in the courses need to work out of the classroom.',
+        pregunta:'The teachers help the exchange students when they need it.',
         respuesta: true 
     },
     {
         id:10,
-        pregunta:'Felipe’s email address is Salas97@yahoo.com.',
+        pregunta:'The second student doesn’t like Colombian culture.',
         respuesta: false 
     }
 ]

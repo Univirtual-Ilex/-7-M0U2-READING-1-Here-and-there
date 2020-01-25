@@ -35,11 +35,11 @@ const estilos_home = css`
 
     .bloque-derecho>figure{
         position:absolute;
-        top: 5.6em;
-        left: -1em;
+        top: 5em;
+        left: 3em;
         img{
             display:block;
-            width:38.5em;
+            width:28.5em;
             height: auto;
         }
 

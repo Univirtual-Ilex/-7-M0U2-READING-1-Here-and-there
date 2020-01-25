@@ -4,13 +4,12 @@ import Container from '../Container'
 import MainTitle from '../MainTitle'
 import ButtonUi from '../ButtonControlUI'
 import {ICol, IRow} from '../Grid'
-import BubbleInstructions from '../BubbleInstructions'
-import Video from '../Video'
-import ButtonX from '../ButtonX'
 // Styles
 import styled from 'styled-components'
 import styles, { UiButtonsContainer } from './Actividad_styles'
 import Ilex from '../../App/variables'
+import PersonaHover from '../PersonaHover/PersonaHover'
+import ButtonCheck from '../ButtonCheck'
 
 
 
@@ -20,34 +19,31 @@ import Ilex from '../../App/variables'
 
 const Actividad_base =  ({...props}) => {
     return (
-        <Container bgImage='./src/bg_actividad1.png' {...props} h={36}>
+        <Container bgImage='./src/bg_actividad1.png' {...props} h={32}>
             
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='slide the sentences to organize them, then press check to verify if it is right or wrong, press hint if you need help   ' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Click on the image to see the information of each student' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' />
             </UiButtonsContainer>
             <IRow pt={2}>
                 <ICol py={ 2 }>
                     <MainTitle color={Ilex.violeta2} size={1.5}>
-                    FIRST WATCH THIS VIDEO THEN ORGANIZE THE ACTIVITY SENTENCES 
+                    READ EACH STUDENT'S EXPERIENCES THEN ANSWER IF THE SENTENCES ARE TRUE OR FALSE
                     </MainTitle>  
                 </ICol>
             </IRow>
 
-            <IRow justify='space-between' align='center' w={80}>
-                <ICol w={30} pt={2}>
-                    <BubbleInstructions align='center' py={3} px={1}>
-                        For the next activity listen to the video carefully, then organize the sentences in the correct order
-                    </BubbleInstructions>
+            <IRow justify='center' align='center' w={80} gutters={1}>
+                <ICol w={40}>
+                    <PersonaHover persona='francisco'/>
                 </ICol>
-                <ICol w={65} pl={2}>
-                    <Video videoSrc='./media/video.mp4' w={ 30 } radius></Video>
+                <ICol w={40}>
+                    <PersonaHover persona='henrietta'/>
                 </ICol>
             </IRow>
-
-            <IRow w={100} justify='flex-end' py={0}>
-                <ICol w={15}>
-                    <ButtonX> Next </ButtonX>
+            <IRow>
+                <ICol pt={1}>
+                    <ButtonCheck>Next</ButtonCheck>
                 </ICol>
             </IRow>
 

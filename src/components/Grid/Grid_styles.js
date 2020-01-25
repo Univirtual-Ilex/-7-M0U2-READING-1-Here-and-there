@@ -43,6 +43,7 @@ export const stylesRow = css`
     justify-content: ${ props => props.justify || 'flex-start' };
     align-items: ${ props=> props.valign || 'flex-start'};
     width:${ (props) => ( props.w || 100 ) }%;
+    height:${ (props) => ( props.h + '%' || 'auto' ) };
     margin: ${
         (props)=>{
             switch (props.align) {

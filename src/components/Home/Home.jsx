@@ -13,9 +13,9 @@ const Home_base = function ({...props}) { // se le pasan las props para recibir 
 
                     <div className='bloque-izquierdo'>
                         <div className='bloque-izquierdo-container'>
-                            <h1>This is where i live </h1>
+                            <h1> Here and there </h1>
                             <p>
-                            Practice places in your neighborhood. 
+                            Read the experiences of two Exchange students at UTP. Click True or False for the statements.
                             <span className='negrilla'> <br/> ¡Time to practice your listening skill!</span></p>
                             <ButtonX>Start</ButtonX>
                         </div>
