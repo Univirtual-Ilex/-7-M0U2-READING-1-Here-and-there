@@ -5,6 +5,20 @@ import styles from './PersonaHover_styles'
 import { useState } from 'react'
 import Modal from '../ModalGenerico/ModalGenerico'
 
+
+const Flag_base = ({src, person, ...props}) => {
+    return(
+        <div {...props}>
+            <p className="center">
+                <img src={src} alt=" Flag "/>
+            </p>
+            <p>
+                {person}
+            </p>
+        </div>
+    )
+}
+
 // Componente base
 const PersonaHover_base = ({persona, ...props}) => {
     const francisco = `
@@ -16,13 +30,15 @@ const PersonaHover_base = ({persona, ...props}) => {
     const handleModal = () => {
         activo ? mostrarModal(false) : mostrarModal(true)
     }
+
+
     return (
         <div {...props}>
                 <div className={'person ' + persona } onClick={handleModal}>
                 </div>
                 <Modal visible={activo} onClick={handleModal} w={40} bg="rgba(160,255,162,0.7)">
                     <div className='description'>
-                        { persona === 'francisco' ? francisco : persona === 'henrietta' ? henrietta : '' }                    
+                        { persona === 'francisco' ?  <Flag src="./src/mex.png" person={francisco} /> : persona === 'henrietta' ? <Flag src="./src/ger.png" person={henrietta} /> : '' }                    
                     </div>
                 </Modal>
 
@@ -30,4 +46,9 @@ const PersonaHover_base = ({persona, ...props}) => {
     )
 }
 const PersonaHover = styled(PersonaHover_base)`${ styles }`
+const Flag = styled(Flag_base)`
+.center{
+    text-align:center
+}
+`
 export default PersonaHover

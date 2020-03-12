@@ -26,6 +26,12 @@ const styles = css`
         transform: scale(1.1)
     }
 }
+
+.description{
+
+        text-align:center;
+
+}
 `
 
 export default styles
