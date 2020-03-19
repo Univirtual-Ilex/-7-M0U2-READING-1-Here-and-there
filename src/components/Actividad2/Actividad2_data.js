@@ -2,7 +2,7 @@ const data = [
     {
         id:1,
         pregunta:'The first student says that he does not like Colombian food.',
-        respuesta: true 
+        respuesta: false 
     },
     {
         id:2,
@@ -12,12 +12,12 @@ const data = [
     {
         id:3,
         pregunta:'Henrietta is German.',
-        respuesta: false 
+        respuesta: true
     },
     {
         id:4,
         pregunta:'Francisco likes UTP’s nature.',
-        respuesta: false 
+        respuesta: true
     },
     {
         id:5,
@@ -37,7 +37,7 @@ const data = [
     {
         id:8,
         pregunta:'The first student wants to learn more Spanish.',
-        respuesta: true 
+        respuesta: false
     },
     {
         id:9,

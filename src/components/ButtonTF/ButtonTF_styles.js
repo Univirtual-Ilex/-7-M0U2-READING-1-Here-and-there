@@ -28,7 +28,13 @@ const styles = css`
                 background-color: ${Ilex.rosa};
             }
         }
+
     }
+
+    &.active button{
+            background-color:${Ilex.color_amarilloClaro};
+            color:${Ilex.morado};
+        }
 
 `
 
